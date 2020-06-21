@@ -11,7 +11,7 @@ end
 
 def self.create_table
 sql = <<-SQL
-CREATE TABLE IF NOT EXIST  songs(
+CREATE TABLE IF NOT EXIST  students(
 id INTERGER PRIMARY KEY,
 name TEXT,
 grade INTERGER
