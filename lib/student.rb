@@ -14,7 +14,7 @@ sql = <<-SQL
 CREATE TABLE students(
 id INTEGER PRIMARY KEY,
 name TEXT,
-grade INTERGER
+grade INTEGER
 )
 SQL
 DB[:conn].execute(sql)
