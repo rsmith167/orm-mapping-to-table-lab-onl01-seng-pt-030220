@@ -31,7 +31,8 @@ def save
   sql = <<-SQL
   INSERT INTO students (name,grade) VALUES (? ?)
   SQL
-  DB[]
+  DB[:conn].execute(sql, self.name, self.grade)
+  @id = DB[:]
 end
 
 def self.create(name, grade)
